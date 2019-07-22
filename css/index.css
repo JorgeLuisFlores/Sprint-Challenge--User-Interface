@@ -49,17 +49,43 @@ table {
 
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html, body {
+    font-size: 16px;
+    font-weight: bold;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
+    font-weight: bold;
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
+}
+
+.nav-container{
+    display:flex;
+    align-items: baseline;
+    justify-content: center;
+    
+}
+
+a{
+    color: black;
+    margin: 2.5%;
+}
+
+.jumbo{
+    margin-left: 24%;
+    width: 52.5%;
+}
+
+.jumbo2 {
+    margin-left: 24%;
+    width: 52.5%;
 }
 
 p {
@@ -71,10 +97,56 @@ p {
     margin: 0 auto;
 }
 
+.container-about{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.about-info{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    border-bottom: 1px dashed black;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-box {
+    width: 45%;
+    margin-left: 1%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-bottom: 1px dashed black;
+}
+
+.about-box2 {
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-bottom: 1px dashed black;
+}
+
+button{
+    border-radius: 10px;
+    border: 2px solid black;
+    background: white;
+    color: black;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 2%;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -126,9 +198,16 @@ p {
     padding-right: 0;
 }
 
+.about-bottom{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
 footer {
     width: 100%;
     background: black;
+    margin-left: 1%;
 }
 
 footer nav {
@@ -143,4 +222,43 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (min-width:240px) and (max-width: 500px){
+    body {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: black;
+        width: 100%;
+    }
+
+    a{
+        background: black;
+        color: white;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2%;
+        margin: 2%;
+    }
+
+    img{
+        display: none;
+    }
 }
